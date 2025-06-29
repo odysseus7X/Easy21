@@ -1,6 +1,6 @@
 import numpy as np
 import random
-import Easy21 as env
+import MC_control as env
 import matplotlib.pyplot as plt
 
 class linear_approximation_sarsa():
