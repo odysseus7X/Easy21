@@ -10,6 +10,12 @@ The assignment explores Reinforcement Learning concepts such as:
 
 ---
 
+## 1. Implementation of Easy21
+
+The Easy21 environment was implemented following the problem definition provided in the assignment. The environment is similar to Blackjack, with some key differences (e.g., cards can be red or black, no aces, no splitting, and the deck is infinite).
+
+---
+
 ## 2. Monte-Carlo Control in Easy21
 
 Monte Carlo Control was used to learn the optimal policy through episodic sampling without bootstrapping. The action-value function is updated only at the end of each episode.
@@ -62,22 +68,34 @@ A linear function approximator with coarse coding to generalize value estimates 
 
 ### • What are the pros and cons of bootstrapping in Easy21?
 
+Pros:-  
+Helps in reducing variance.  
+Better credit assignment as value is updated after each step.  
+Can be done online as no need to wait till the end of the episode.  
 
+Cons:-  
+Increased bias.
+More dependent on the initial values.
 
 ---
 
 ### • Would you expect bootstrapping to help more in Blackjack or Easy21? Why?
 
-
+Easy21. It has longer episodes on average as compared to that of blackjack. Bootstrapping shows greater effect when it is done on episodes with larger no. of steps.
 
 ---
 
 ### • What are the pros and cons of function approximation in Easy21?
 
+Pros:-  
+Less memory usage.  
+Faster calculation as it has lesser no. of parameters.  
 
+Cons:-  
+Cannot attain true optimum value.
 
 ---
 
 ### • How would you modify the function approximator suggested in this section to get better results in Easy21?
 
-
+Can use better appproximators like neural networks. Increasing the no. of parameters will also lead to better approximation.
