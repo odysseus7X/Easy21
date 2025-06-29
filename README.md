@@ -74,7 +74,7 @@ Better credit assignment as value is updated after each step.
 Can be done online as no need to wait till the end of the episode.  
 
 Cons:-  
-Increased bias.
+Increased bias.  
 More dependent on the initial values.
 
 ---
